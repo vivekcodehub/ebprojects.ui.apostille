@@ -1,0 +1,24 @@
+{
+  "name": "apostille-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "service": "gulp service"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-sass": "^6.0.0",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.85.1"
+  }
+}

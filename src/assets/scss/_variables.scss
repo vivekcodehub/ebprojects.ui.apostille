@@ -1,0 +1,32 @@
+
+// // Colors Varibale
+// $primary:#346EF1;
+// $primary_shade:#2A59C1;
+// $gray:#C1C7D0;
+// $mid_gray:#505F79;
+// $dark_gray:#091E42;
+
+
+// @mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+
+//   // For Google Chrome
+//   &::-webkit-scrollbar {
+//     width: $size;
+//     height: $size;
+//   }
+
+//   &::-webkit-scrollbar-thumb {
+//     background: $foreground-color;
+//     border-radius: $size;
+//   }
+
+//   &::-webkit-scrollbar-track {
+//     background: $background-color;
+//   }
+
+//   // For Internet Explorer
+//   & {
+//     scrollbar-face-color: $foreground-color;
+//     scrollbar-track-color: $background-color;
+//   }
+// }

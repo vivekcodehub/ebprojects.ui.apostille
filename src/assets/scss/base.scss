@@ -1,0 +1,131 @@
+ @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Manrope:wght@200..800&display=swap');
+
+ // @use "_fonts";
+
+ * {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   box-sizing: border-box;
+ }
+
+ *:focus,
+ *:hover {
+   outline: none;
+   text-decoration: none;
+ }
+
+ figure {
+   margin: 0;
+ }
+
+ body {
+   font-family: "Manrope", sans-serif;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ ::placeholder {
+   /* Chrome, Firefox, Opera, Safari 10.1+ */
+   color: #727272;
+   opacity: 1;
+   /* Firefox */
+ }
+
+ :-ms-input-placeholder {
+   /* Internet Explorer 10-11 */
+   color: #727272;
+ }
+
+ ::-ms-input-placeholder {
+   /* Microsoft Edge */
+   color: #727272;
+ }
+
+ ::-webkit-scrollbar {
+   display: none;
+ }
+
+ ol,
+ ul {
+   margin: 0;
+   padding: 0;
+ }
+
+ button {
+   border: 0;
+   background: transparent;
+   line-height: normal;
+ }
+
+ .container {
+   @media screen and (min-width: 1200px) {
+     max-width: 1116px;
+   }
+ }
+
+ .title64,
+ .title40 {
+   font-family: "Averia Serif Libre", serif;
+ }
+
+ // Title
+ .title64 {
+   font-size: 4rem;
+   font-weight: bold;
+   line-height: 120%;
+   letter-spacing: -2px;
+   color: #FFFFFF;
+
+   @media screen and (max-width:767px) {
+     font-size: 2.375rem;
+     padding: 0 24px;
+
+     br {
+       display: none;
+     }
+   }
+ }
+
+ .title40 {
+   font-size: 2.5rem;
+   font-weight: bold;
+   line-height: 120%;
+   letter-spacing: -2px;
+   color: #000;
+
+   @media screen and (max-width:767px) {
+     font-size: 1.625rem;
+     text-align: center;
+     br {
+      display: none;
+     }
+   }
+ }
+
+ .subTitle14 {
+   font-size: 0.875rem;
+   font-weight: 400;
+   line-height: 150%;
+   color: #000;
+ }
+
+ .title_flex {
+   text-align: center;
+   margin-bottom: 40px;
+
+   .title40 {
+     margin-bottom: 8px;
+   }
+
+   .subTitle14 {
+     margin: 0;
+     @media screen and (max-width:991px) {
+      br {
+        display: none;
+      }
+     }
+   }
+ }

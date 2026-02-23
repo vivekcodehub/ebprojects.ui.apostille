@@ -22,7 +22,7 @@ function init(cb) {
   gulp
     .src(["./src/assets/bootstrap-5.3.3/**/*"])
     .pipe(gulp.dest("./dist/assets/bootstrap/"))
-    .pipe(browserSync.stream());
+    // .pipe(browserSync.stream());
   cb();
 }
 
@@ -61,7 +61,7 @@ function scss(cb) {
       })
     )
     .pipe(gulp.dest("dist/assets/css/"))
-    .pipe(browserSync.stream());
+    // .pipe(browserSync.stream());
   cb();
 }
 
@@ -74,7 +74,7 @@ function imageprocess(cb) {
  return gulp
     .src("./src/assets/img/**/*", { encoding: false })
     .pipe(gulp.dest("./dist/assets/img/"))
-    .pipe(browserSync.stream());
+    // .pipe(browserSync.stream());
   cb();
 }
 

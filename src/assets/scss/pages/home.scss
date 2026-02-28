@@ -13,7 +13,7 @@
         text-align: center;
 
         .tag {
-            font-size: 0.875rem;
+            font-size: 1.25rem;
             font-weight: bold;
             color: #fff;
             background: rgba(255, 255, 255, 0.1);
@@ -87,7 +87,7 @@
         .aboutList {
             background: rgba(0, 0, 0, 0.1);
             padding: 40px 56px;
-            max-width: 680px;
+            // max-width: 680px;
             border-radius: 4px;
             position: relative;
             z-index: 1;
@@ -98,7 +98,7 @@
 
             li {
                 list-style-type: disc;
-                font-size: 14px;
+                font-size: 18px;
                 font-weight: 400;
                 line-height: 150%;
                 color: #000;

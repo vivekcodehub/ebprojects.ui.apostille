@@ -168,21 +168,21 @@
         }
     }
 
-    &.navActive {
-        box-shadow: 0px 9px 9px 0px rgba(0, 0, 0, 0.02);
-        background: #fff;
+    // &.navActive {
+    //     box-shadow: 0px 9px 9px 0px rgba(0, 0, 0, 0.02);
+    //     background: #fff;
 
-        .nav_header {
-            .nav_list {
-                li {
-                    a {
-                        color: #994137;
-                    }
-                }
-            }
+    //     .nav_header {
+    //         .nav_list {
+    //             li {
+    //                 a {
+    //                     color: #994137;
+    //                 }
+    //             }
+    //         }
 
-            .humbuger_wrap {}
-        }
+    //         .humbuger_wrap {}
+    //     }
 
-    }
+    // }
 }

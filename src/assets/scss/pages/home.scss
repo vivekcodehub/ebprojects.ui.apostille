@@ -44,6 +44,76 @@
     }
 }
 
+/* Target the wrapper to make it float */
+.header__wrapper {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Centers the container */
+}
+
+/* Style the container as the floating white card */
+.header__wrapper .container {
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Modern blur effect */
+    border-radius: 50px; /* Makes it pill-shaped */
+    padding: 10px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Align nav elements */
+.nav_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Style the list items */
+.nav_list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+
+    a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        font-size: 15px;
+        transition: 0.3s;
+
+        &:hover {
+            color: #d82e3f; /* Red accent */
+        }
+    }
+}
+
+/* Hide hamburger button on desktop */
+.btn_humburger {
+    display: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 991px) {
+    .btn_humburger {
+        display: block; /* Show menu button on mobile */
+    }
+
+    .nav_list {
+        display: none; /* Hide links by default on mobile */
+        /* You'll need JS to toggle a '.show' class here later */
+    }
+}
+
 .about__wrapper {
     padding: 120px 0;
     background: #994137;

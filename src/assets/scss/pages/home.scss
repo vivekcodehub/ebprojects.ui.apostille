@@ -116,7 +116,7 @@
 }
 
 /* Hide hamburger button on desktop */
-.humguberBtn {
+.btn_humburger {
     display: none;
     border: none;
     background: none;
@@ -125,7 +125,7 @@
 
 /* --- Mobile Responsiveness --- */
 @media (max-width: 991px) {
-    .humguberBtn {
+    .btn_humburger {
         display: block;
         /* Show menu button on mobile */
     }

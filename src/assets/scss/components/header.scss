@@ -24,14 +24,14 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 100%;
+            // width: 100%;
         }
 
         @media screen and (max-width:991px) {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 100%;
+            // width: 100%;
         }
 
         .brand {
@@ -41,13 +41,13 @@
         }
 
         .brand img {
-            width: 140px;
+            width: 250px;
             height: auto;
         }
 
         @media screen and (max-width: 991px) {
             .brand img {
-                width: 110px;
+                width: 200px;
             }
         }
 

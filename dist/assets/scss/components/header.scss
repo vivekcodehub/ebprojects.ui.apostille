@@ -20,7 +20,7 @@
             flex-direction: column;
         }
 
-        .humbuger_wrap {
+        .humguberBtn {
             @media screen and (max-width:991px) {
                 display: flex;
                 flex-direction: row;
@@ -58,7 +58,7 @@
                 }
             }
 
-            .btn_humburger {
+            .humguberBtn {
                 display: flex;
                 gap: 4px;
                 display: none;

@@ -116,7 +116,7 @@
 }
 
 /* Hide hamburger button on desktop */
-.btn_humburger {
+.humguberBtn {
     display: none;
     border: none;
     background: none;
@@ -125,16 +125,13 @@
 
 /* --- Mobile Responsiveness --- */
 @media (max-width: 991px) {
-    .btn_humburger {
+    .humguberBtn {
         display: block;
         /* Show menu button on mobile */
     }
 
-    .nav_list {
-        display: none;
-        /* Hide links by default on mobile */
-        /* You'll need JS to toggle a '.show' class here later */
-    }
+    .nav_list.show 
+    { display: flex; }
 }
 
 .about__wrapper {

@@ -24,6 +24,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 100%;
         }
 
         @media screen and (max-width:991px) {
@@ -36,17 +37,17 @@
         .brand {
             display: flex;
             align-items: center;
+            flex-shrink: 0;
         }
 
         .brand img {
-            max-width: 160px;
+            width: 140px;
             height: auto;
-            transition: all 0.3s ease;
         }
 
         @media screen and (max-width: 991px) {
             .brand img {
-                max-width: 120px;
+                width: 110px;
             }
         }
 

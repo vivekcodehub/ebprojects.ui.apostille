@@ -506,7 +506,7 @@ button {
 }
 @media screen and (max-width: 767px) {
   .hero__banner__wrapper .contents .tag {
-    margin: 0 24px 16px 24px;
+    margin: 16px auto 16px auto;
   }
 }
 .hero__banner__wrapper .contents h1 {

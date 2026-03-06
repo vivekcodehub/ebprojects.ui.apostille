@@ -1110,7 +1110,7 @@ button {
 @media screen and (max-width: 767px) {
   .quote__wrapper .wrapper {
     background-image: none;
-    padding: 32px 16px 56px 16px;
+    /* padding: 32px 16px 56px 16px; */
   }
   .quote__wrapper .wrapper::after {
     content: "";

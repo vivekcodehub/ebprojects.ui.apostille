@@ -1,0 +1,52 @@
+.membership-hero {
+    /* Gradient matches the dark reddish-brown tones in the UI screenshot */
+    background: radial-gradient(circle at center, #9c4c44 0%, #7c2c24 100%);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    text-align: center;
+    color: #ffffff;
+
+    .hero-content {
+        max-width: 900px;
+        margin: 0 auto;
+
+        h1 {
+            font-family: 'Averia Serif Libre', serif; /* Matching the serif font in screenshot */
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+            line-height: 1.1;
+        }
+
+        .hero-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 400;
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .membership-hero {
+        padding: 60px 20px;
+        
+        h1 {
+            font-size: 2.5rem;
+        }
+        
+        .hero-text {
+            font-size: 1rem;
+        }
+    }
+}

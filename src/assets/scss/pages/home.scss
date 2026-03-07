@@ -63,7 +63,7 @@
 /* Target the wrapper to make it float */
 .header__wrapper {
     position: fixed;
-    top: 20px;
+    top: 0px;
     left: 0;
     right: 0;
     z-index: 1000;
@@ -98,7 +98,7 @@
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 0;
+    right: 0;
     gap: 40px;
 
     a {

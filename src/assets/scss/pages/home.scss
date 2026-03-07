@@ -98,8 +98,11 @@
     display: flex;
     list-style: none;
     margin: 0;
-    right: -20px;
+    right: -40px;
+    left: -40px;
     gap: 40px;
+    width: -webkit-fill-available;
+
 
     a {
         text-decoration: none;

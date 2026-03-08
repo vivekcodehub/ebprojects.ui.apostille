@@ -21,7 +21,48 @@
 
 <body>
     <main id="main-scroll">
-        @@include('components/header.html')
+        <header class="header__wrapper">
+    <div class="container">
+        <nav class="nav_header">
+            <a href="../index.html" class="brand">
+                <img src="assets/img/Logo.svg" alt="apostille logo logo">
+                <!-- <span>Apostille</span> -->
+            </a>
+            <div class="humbuger_wrap">
+                <button class="btn_humburger" id="humguberBtn">
+                    <!-- <span>Menu</span> -->
+                </button>
+            </div>
+            <ul class="nav_list" id="humbugerMenu">
+                <li>
+                    <a href="#about">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="#service">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#work">
+                        Works
+                    </a>
+                </li>
+                <li>
+                    <a href="#price">
+                        Pricing
+                    </a>
+                </li>
+                <li>
+                    <a href="#choose">
+                        Choose Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
         <section class="membership-hero">
             <div class="container">
@@ -60,7 +101,36 @@
                 review, notarization (where applicable), preparation, and submission.</p>
         </section>
 
-        @@include('components/footer.html')
+        <div class="footer">
+    <div class="container">
+        <div class="formificientlogo">
+            <img src="assets/img/Logo formificient.svg" alt="formificient logo">
+        </div>
+        <div class="main_flex">
+            <div class="contact_flex">
+                <div class="inner">
+                    <img src="../../assets/img/mail.svg" alt="Mail" />
+                    <a href="mailto:info@ApostilleCertificates.ca">info@ApostilleCertificates.ca</a>
+                </div>
+                <div class="inner">
+                    <img src="../../assets/img/phone.svg" alt="Mail" />
+                    <a href="tel:(416) 840-6943">(416) 840-6943</a>
+                </div>
+            </div>
+
+            <div class="copyRight">
+                <ul>
+                    <li>© Copyright 2026</li>
+                    <li><a href="javascript:">Terms</a></li>
+                    <li><a href="javascript:">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+     <div class="brand">
+        <img src="../../assets/img/brand.png" alt="">
+     </div>
+</div>
     </main>
 
 

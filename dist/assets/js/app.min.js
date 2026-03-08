@@ -1,13 +1,13 @@
 // Header active
-$(document).ready(function () {
-  $(window).on("scroll", function () {
-    if ($(this).scrollTop() > 10) {
-      $(".header__wrapper").addClass("navActive");
-    } else {
-      $(".header__wrapper").removeClass("navActive");
-    }
-  });
-});
+// $(document).ready(function () {
+//   $(window).on("scroll", function () {
+//     if ($(this).scrollTop() > 10) {
+//       $(".header__wrapper").addClass("navActive");
+//     } else {
+//       $(".header__wrapper").removeClass("navActive");
+//     }
+//   });
+// });
 
 // Humbuger Toogle button
 const toggleBtn = document.getElementById("humguberBtn");

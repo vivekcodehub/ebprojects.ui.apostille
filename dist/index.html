@@ -5,13 +5,18 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="../assets/img/favicon.svg" />
+
   <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.8/dist/lenis.css">
   <link href="/assets/css/app.min.css" rel="stylesheet" />
 
-  <title>Home</title>
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+
+  <title>Apostille Services</title>
 </head>
 
 
@@ -20,12 +25,11 @@
     <header class="header__wrapper">
     <div class="container">
         <nav class="nav_header">
+            <a href="../index.html" class="brand">
+                <img src="assets/img/Logo.svg" alt="apostille logo logo">
+                <!-- <span>Apostille</span> -->
+            </a>
             <div class="humbuger_wrap">
-                <a href="../index.html" class="brand">
-                    <img src="assets/img/Logo.svg" alt="Sasuage logo">
-                    <!-- <span>Apostille</span> -->
-                </a>
-
                 <button class="btn_humburger" id="humguberBtn">
                     <!-- <span>Menu</span> -->
                 </button>
@@ -63,10 +67,13 @@
 
     <section class="hero__banner__wrapper">
       <div class="contents">
-        <div class="tag">Fast Apostille & Legalization Services for Canadian Documents</div>
+        <img src="assets/img/stamps.png" class="stamp-img" alt="Official Stamp">
+        <div class="tag">CALL US : (416) 840-6943</div>
         <h1 class="title64">Apostille, Legalization & Notarization</h1>
+        <p class="subheropara">Same-Day & Next Day Apostille Service Available</p>
+
         <a href="#quote" class="co_Button ">
-          GET A QUOTE
+          ASK A QUESTION
         </a>
       </div>
     </section>
@@ -75,14 +82,15 @@
       <div class="container">
         <div class="content">
           <h2 class="title40">
-            One Provider for All International <br /> Document Requirements
+            Comprehensive Apostille & Legalization <br /> Services for International Use
           </h2>
           <ul class="aboutList">
-            <li>Different countries impose different rules. Some require an apostille. Others require full legalization
-              through embassies or consulates. Many documents must first be notarized or properly drafted.</li>
-            <li>We identify the correct process, ensure documents are prepared correctly, and submit them to the
-              appropriate authorities to reduce delays and rejection risk. We assist individuals, families, businesses,
-              and professionals across Ontario and Canada.</li>
+            <li>Document recognition varies by country. Hague Apostille Convention members require an apostille, while
+              non-members require consular legalization. Documents must be properly notarized or certified before
+              authentication.</li>
+            <li>We assess the destination country’s requirements, ensure full compliance, and manage submissions to
+              provincial, federal, and consular authorities. We provide end-to-end support to individuals, families,
+              corporations, and legal professionals across Ontario and Canada.</li>
           </ul>
         </div>
       </div>
@@ -90,26 +98,28 @@
 
     <section class="services__wrapper" id="service">
       <div class="container">
-        <h2 class="title40">Our line of Services</h2>
+        <h2 class="title40">Comprehensive Document Authentication Services</h2>
 
         <div class="tab_buttons">
-          <button class="tabBtn active" data-tab="tab1">Apostille Services</button>
-          <button class="tabBtn" data-tab="tab2">Legalization Services</button>
-          <button class="tabBtn" data-tab="tab3">Notarization Services</button>
-          <button class="tabBtn" data-tab="tab4">Legal Document Drafting & Review</button>
-          <button class="tabBtn" data-tab="tab5">Translation & Certification </button>
+          <button class="tabBtn active" data-tab="tab1">Hague Apostille Certification</button>
+          <button class="tabBtn" data-tab="tab2">Embassy & Consular Legalization</button>
+          <button class="tabBtn" data-tab="tab3">Notarization & Certified Copies</button>
+          <button class="tabBtn" data-tab="tab4">Legal Document Drafting & Compliance Review</button>
+          <button class="tabBtn" data-tab="tab5">Certified Translation & Affidavit of Accuracy</button>
         </div>
 
         <div class="tabContent active" id="tab1">
           <div class="flex_box">
             <div class="service">
-              <h2>Apostille Services (Hague Convention Countries)</h2>
+              <h2>Hague Apostille Certification</h2>
               <ul class="serviceList">
-                <li>In Ontario, all apostilles are issued by Ontario Official Document Services (ODS). We review your
-                  documents for eligibility, complete any required notarization, and submit them to ODS for apostille
-                  processing.</li>
-                <li>An apostille issued by ODS confirms the authenticity of official signatures, seals, and stamps so
-                  your document is recognized in Hague Convention countries without further embassy legalization.</li>
+                <li>In Ontario, all apostilles are issued by Ontario Official Documents Services (ODS) and Global
+                  Affairs Canada. We review your documents for eligibility, complete any required notarization, and
+                  submit them
+                  to ODS or Global Affairs Canada for apostille processing.</li>
+                <li>An apostille issued by ODS or Global Affairs Canada confirms the authenticity of official
+                  signatures, seals, and stamps, ensuring your document is recognized in Hague Convention countries
+                  without further embassy legalization.</li>
               </ul>
             </div>
 
@@ -129,25 +139,24 @@
         <div class="tabContent" id="tab2">
           <div class="flex_box">
             <div class="service">
-              <h2>Apostille Services (Hague Convention Countries)</h2>
+              <h2>Embassy & Consular Legalization</h2>
               <ul class="serviceList">
-                <li>In Ontario, all apostilles are issued by Ontario Official Document Services (ODS). We review your
-                  documents for eligibility, complete any required notarization, and submit them to ODS for apostille
-                  processing.</li>
-                <li>An apostille issued by ODS confirms the authenticity of official signatures, seals, and stamps so
-                  your document is recognized in Hague Convention countries without further embassy legalization.</li>
+                <li>If your destination country is not part of the Hague Convention, an apostille is not sufficient.
+                  Your documents must undergo legalization, a multi-step verification process.</li>
+                <li>Legalization typically involves:
+                  1.Notarization (if required)
+                  2.Authentication by a Canadian government authority
+                  3.Legalization by the foreign embassy or consulate</li>
               </ul>
             </div>
 
             <div class="document">
-              <h3>Common apostille documents include</h3>
+              <h3>Legalization is commonly required for documents used in countries such as:</h3>
               <ul class="documentList">
-                <li>Birth, marriage, and death certificates</li>
-                <li>Powers of attorney</li>
-                <li>Academic diplomas and transcripts</li>
-                <li>Police clearance certificates</li>
-                <li>Corporate and commercial documents</li>
-                <li>Affidavits and statutory declarations</li>
+                <li>United Arab Emirates, Saudi Arabia, Qatar, Kuwait</li>
+                <li>China, Vietnam, Thailand, Indonesia</li>
+                <li>Egypt, Nigeria, Pakistan, Philippines</li>
+                <li>Other non-Hague countries</li>
               </ul>
             </div>
           </div>
@@ -155,25 +164,27 @@
         <div class="tabContent" id="tab3">
           <div class="flex_box">
             <div class="service">
-              <h2>Apostille Services (Hague Convention Countries)</h2>
+              <h2>Notarization & Certified Copies</h2>
               <ul class="serviceList">
-                <li>In Ontario, all apostilles are issued by Ontario Official Document Services (ODS). We review your
-                  documents for eligibility, complete any required notarization, and submit them to ODS for apostille
-                  processing.</li>
-                <li>An apostille issued by ODS confirms the authenticity of official signatures, seals, and stamps so
-                  your document is recognized in Hague Convention countries without further embassy legalization.</li>
+                <li>Notary publics hold an important role in society. Among other things, they serve as official
+                  witnesses to the execution and signing of contracts, agreements and numerous other legal documents.
+                  Notaries also certify documents as true copies of originals. The word “notarization” is used to
+                  describe the service a public notary provides.In addition to those described above, these services
+                  also include the authority to administer oaths, solemn declarations and affirmations that are used for
+                  affidavits and statutory declarations.The notary will not necessarily review the substance of the
+                  document, but it is important to remember that you must sign the document in their presence.</li>
               </ul>
             </div>
 
             <div class="document">
-              <h3>Common apostille documents include</h3>
+              <h3>Notarial services include:</h3>
               <ul class="documentList">
-                <li>Birth, marriage, and death certificates</li>
-                <li>Powers of attorney</li>
-                <li>Academic diplomas and transcripts</li>
-                <li>Police clearance certificates</li>
-                <li>Corporate and commercial documents</li>
+
+                <li>Witnessing signatures</li>
+                <li>Administering oaths and affirmations</li>
+                <li>Certifying true copies of original documents</li>
                 <li>Affidavits and statutory declarations</li>
+                <li>Notarized acceptance of translations</li>
               </ul>
             </div>
           </div>
@@ -181,25 +192,27 @@
         <div class="tabContent" id="tab4">
           <div class="flex_box">
             <div class="service">
-              <h2>Apostille Services (Hague Convention Countries)</h2>
+              <h2>Legal Document Drafting & Compliance Review</h2>
               <ul class="serviceList">
-                <li>In Ontario, all apostilles are issued by Ontario Official Document Services (ODS). We review your
-                  documents for eligibility, complete any required notarization, and submit them to ODS for apostille
-                  processing.</li>
-                <li>An apostille issued by ODS confirms the authenticity of official signatures, seals, and stamps so
-                  your document is recognized in Hague Convention countries without further embassy legalization.</li>
+                <li>We assist with the professional drafting of a wide range of legal documents tailored to your
+                  specific needs. Whether you require affidavits, statutory declarations, powers of attorney, travel
+                  consent letters, corporate documents, or other formal instruments, we ensure each document is clearly
+                  written, legally sound, and properly structured for its intended purpose. Our goal is to provide
+                  accurate, efficient, and practical drafting support so your documents are ready for signing,
+                  notarization, authentication, or apostille where required. </li>
+
               </ul>
             </div>
 
             <div class="document">
-              <h3>Common apostille documents include</h3>
+              <h3>Common documents include:</h3>
               <ul class="documentList">
-                <li>Birth, marriage, and death certificates</li>
-                <li>Powers of attorney</li>
-                <li>Academic diplomas and transcripts</li>
-                <li>Police clearance certificates</li>
-                <li>Corporate and commercial documents</li>
-                <li>Affidavits and statutory declarations</li>
+
+                <li>Powers of Attorney</li>
+                <li>Statutory declarations and affidavits</li>
+                <li>Travel consent letters</li>
+                <li>Corporate resolutions and declarations</li>
+                <li>Custom legal documents</li>
               </ul>
             </div>
           </div>
@@ -207,17 +220,18 @@
         <div class="tabContent" id="tab5">
           <div class="flex_box">
             <div class="service">
-              <h2>Apostille Services (Hague Convention Countries)</h2>
+              <h2>Certified Translation & Affidavit of Accuracy</h2>
               <ul class="serviceList">
-                <li>In Ontario, all apostilles are issued by Ontario Official Document Services (ODS). We review your
-                  documents for eligibility, complete any required notarization, and submit them to ODS for apostille
-                  processing.</li>
-                <li>An apostille issued by ODS confirms the authenticity of official signatures, seals, and stamps so
-                  your document is recognized in Hague Convention countries without further embassy legalization.</li>
+                <li>We assist with certified translations and provide affidavit accuracy services to ensure your
+                  documents meet official requirements in Canada and abroad. Our certified translators provide precise,
+                  professionally prepared translations suitable for government, immigration, court, and international
+                  use. Where required, we also prepare and commission affidavits of accuracy to formally confirm that
+                  the translation is true and complete, helping ensure your documents are accepted without delay.
+                </li>
               </ul>
             </div>
 
-            <div class="document">
+            <!-- <div class="document">
               <h3>Common apostille documents include</h3>
               <ul class="documentList">
                 <li>Birth, marriage, and death certificates</li>
@@ -227,7 +241,7 @@
                 <li>Corporate and commercial documents</li>
                 <li>Affidavits and statutory declarations</li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -244,29 +258,29 @@
         <div class="works__Cards_wrap">
           <div class="worksCard">
             <img src="../assets/img/works/1.png" alt="Image" />
-            <h5>Send Your <br /> Documents</h5>
+            <h5>Step 1 <br />Send Your Documents</h5>
             <p>Email or upload clear copies and specify the destination country.</p>
           </div>
           <div class="worksCard">
             <img src="../assets/img/works/2.png" alt="Image" />
-            <h5>Review <br />& Quote</h5>
+            <h5>Step 2 <br />Review & Quote</h5>
             <p>We confirm whether apostille or legalization is required and provide a transparent quote and estimated
               timeline.</p>
           </div>
           <div class="worksCard">
             <img src="../assets/img/works/3.png" alt="Image" />
-            <h5>Notarization <br />(If Required)</h5>
+            <h5>Step 3<br />Notarization (If Required)</h5>
             <p>Documents are notarized or certified in Ontario in accordance with ODC standards.</p>
           </div>
           <div class="worksCard">
             <img src="../assets/img/works/4.png" alt="Image" />
-            <h5>Apostille or Legalization <br />Processing</h5>
+            <h5>Step 4<br />Apostille Processing</h5>
             <p>For Hague Convention countries, documents are submitted to Ontario Official Document Services (ODS) for
               apostille issuance.</p>
           </div>
           <div class="worksCard">
             <img src="../assets/img/works/5.png" alt="Image" />
-            <h5>Delivery at <br />your address</h5>
+            <h5>Step 5 <br />Delivery at your address</h5>
             <p>Completed documents are returned by registered mail or made available for pickup.</p>
           </div>
         </div>
@@ -284,12 +298,12 @@
           <div class="pricingCard">
             <div class="inner">
               <h3>Notarization</h3>
-              <h4>CA$ <span>113</span></h4>
-              <p>Per user/month, billed annually</p>
+              <!-- <h4>CA$ <span>113</span></h4> -->
+              <!-- <p>Per user/month, billed annually</p> -->
 
               <ul class="list_items">
-                <li>In Person- <span>$35</span></li>
-                <li>Online- <span>$45</span></li>
+                <li>In Person (first document)- <span>$35</span></li>
+                <li>Online (first document)- <span>$45</span></li>
                 <li>In Person- <span>$35</span></li>
                 <li>Second Document- <span>$15</span></li>
                 <li>Each Additional- <span>$10</span></li>
@@ -301,11 +315,11 @@
           <div class="pricingCard">
             <div class="inner">
               <h3>Apostille & Legalization</h3>
-              <h4>CA$ <span>175</span></h4>
-              <p>Starting at</p>
+              <!-- <h4>CA$ <span>175</span></h4> -->
+              <!-- <p>Starting at</p> -->
 
               <ul class="list_items">
-                <li>Each additional document- <span>$35</span></li>
+                <li>Starting at- <span>$140</span></li>
               </ul>
 
               <a href="#quote" class="co_Button btnStart">GET STARTED</a>
@@ -314,10 +328,11 @@
           <div class="pricingCard">
             <div class="inner">
               <h3>Drafting</h3>
-              <h4>CA$ <span>85</span></h4>
-              <p>Starting at</p>
+              <!-- <h4>CA$ <span>85</span></h4> -->
+              <!-- <p>Starting at</p> -->
 
               <ul class="list_items">
+                <li>Starting at- <span>$50</span></li>
                 <li>We specialize in drafting all forms of documents.</li>
                 <li>Affidavits, invitation letter, powers of attorney.</li>
               </ul>
@@ -386,43 +401,28 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="../assets/img/choose/1.png" alt="" />
-            <h6>ODC-compliant notarizations</h6>
+            <p>“Fast, professional, and completely stress-free apostille service.” A.K.</p>
+            <h6>ODS Compliant Notarizations</h6>
           </div>
           <div class="swiper-slide">
-            <img src="../assets/img/choose/1.png" alt="" />
-            <h6>Reduced rejection risk</h6>
+            <img src="../assets/img/choose/2.png" alt="" />
+            <p>“They handled my documents quickly and kept me informed every step of the way.” A.G.</p>
+            <h6>Reduced Rejection Risk</h6>
           </div>
           <div class="swiper-slide">
-            <img src="../assets/img/choose/1.png" alt="" />
-            <h6>Transparent pricing</h6>
+            <img src="../assets/img/choose/3.png" alt="" />
+            <p>“Excellent turnaround time and very knowledgeable about international requirements.” G.R.</p>
+            <h6>Transparent Pricing</h6>
           </div>
           <div class="swiper-slide">
-            <img src="../assets/img/choose/1.png" alt="" />
-            <h6>ODC-compliant notarizations</h6>
+            <img src="../assets/img/choose/4.png" alt="" />
+            <p>Simple process, fair pricing, and outstanding customer service.” P.M.</p>
+            <h6>Apostille Expertise</h6>
           </div>
           <div class="swiper-slide">
-            <img src="../assets/img/choose/1.png" alt="" />
-            <h6>Reduced rejection risk</h6>
-          </div>
-          <div class="swiper-slide">
-            <img src="../assets/img/choose/1.png" alt="" />
-            <h6>Transparent pricing</h6>
-          </div>
-          <div class="swiper-slide">
-            <img src="../assets/img/choose/1.png" alt="" />
-            <h6>Transparent pricing</h6>
-          </div>
-          <div class="swiper-slide">
-            <img src="../assets/img/choose/1.png" alt="" />
-            <h6>ODC-compliant notarizations</h6>
-          </div>
-          <div class="swiper-slide">
-            <img src="../assets/img/choose/1.png" alt="" />
-            <h6>Reduced rejection risk</h6>
-          </div>
-          <div class="swiper-slide">
-            <img src="../assets/img/choose/1.png" alt="" />
-            <h6>Transparent pricing</h6>
+            <img src="../assets/img/choose/5.png" alt="" />
+            <p>“Highly recommend ApostilleCertificates.ca for reliable and efficient document authentication.” L.T.</p>
+            <h6>Nationwide Coordination</h6>
           </div>
         </div>
       </div>
@@ -438,7 +438,11 @@
           </button>
           <div class="faq__answer">
             <p>
-              Yes, we assist with apostille processing for Hague Convention countries.
+              No. Apostille certificates are issued by the appropriate government authority, not by private service
+              providers. In Canada, apostilles are issued by the competent provincial authority or by Global Affairs
+              Canada, depending on the document type. We act as your authorized agent to prepare, review, and submit
+              your documents to the proper authority, managing the process from start to finish to ensure they are
+              correctly apostilled.
             </p>
           </div>
         </div>
@@ -459,12 +463,15 @@
 
         <div class="faq__item">
           <button class="faq__question">
-            Are your notarization accepted by ODS?
+            Are your notarizations accepted by ODS and Global Affairs Canada?
             <span class="faq__icon"></span>
           </button>
           <div class="faq__answer">
             <p>
-              Yes, our notarizations comply with ODS requirements.
+              Yes. Our notarizations are prepared in full compliance with Ontario and federal requirements and are
+              routinely accepted by the Ontario Document Services (ODS) and Global Affairs Canada for authentication and
+              apostille processing, provided the underlying document meets their applicable standards.
+
             </p>
           </div>
         </div>
@@ -492,6 +499,24 @@
             </p>
           </div>
         </div>
+
+        <div class="faq__item">
+          <button class="faq__question">
+            Do you provide legalization or authentication certificates for documents?
+            <span class="faq__icon"></span>
+          </button>
+          <div class="faq__answer">
+            <p>
+              No. Authentication, legalization, and apostille certificates are issued only by the appropriate government
+              authority or foreign consulate. We do not issue these certificates ourselves. Instead, we act as your
+              authorized representative to review your documents, ensure they meet the required standards, and submit
+              them to the proper authority for authentication, legalization, or apostille, managing the process on your
+              behalf from start to finish.
+
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -538,6 +563,9 @@
           <textarea name="message" rows="4" id="message" class="form-control"></textarea>
         </div>
 
+        <div class="g-recaptcha" data-sitekey="6LdMDSIsAAAAAMEpT1fPuU9ZZ0U9FrHhLKsS1sfV" data-callback="captchaVerified"
+          style="margin-bottom: 32px;"></div>
+
         <button type="submit" class="co_Button">Submit</button>
       </form>
 
@@ -554,6 +582,9 @@
 
     <div class="footer">
     <div class="container">
+        <div class="formificientlogo">
+            <img src="assets/img/Logo formificient.svg" alt="formificient logo">
+        </div>
         <div class="main_flex">
             <div class="contact_flex">
                 <div class="inner">
@@ -588,6 +619,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script>
   <script src="/assets/js/app.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <script>
     const faqItems = document.querySelectorAll('.faq__item');
@@ -608,7 +640,7 @@
       });
     });
   </script>
-  
+
   <script>
     const tabButtons = document.querySelectorAll(".tabBtn");
     const tabContents = document.querySelectorAll(".tabContent");
@@ -674,6 +706,7 @@
       },
     });
   </script>
+
 
 
 </body>

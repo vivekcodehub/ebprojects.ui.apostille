@@ -41,9 +41,14 @@ function html(cb) {
 }
 
 function js(cb) {
+  jsHelper(cb, "app");
+  jsHelper(cb, "contactUs");
+}
+
+function jsHelper(cb, jsFileName) {
   gulp
-    .src(["src/assets/js/app.js"])
-    .pipe(concat("app.min.js"))
+    .src(["src/assets/js/" + jsFileName + ".js"])
+    .pipe(concat(jsFileName + ".min.js"))
     .pipe(gulp.dest("dist/assets/js/"))
     .on("end", browserSync.reload);
   cb();

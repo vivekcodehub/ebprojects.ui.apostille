@@ -21,7 +21,21 @@
 
 <body>
     <main id="main-scroll">
-        @@include('components/header.html')
+        <header class="header__wrapper">
+            <div class="container">
+                <nav class="nav_header">
+                    <a href="../index.html" class="brand">
+                        <img src="assets/img/Logo.svg" alt="apostille logo logo">
+                        <!-- <span>Apostille</span> -->
+                    </a>
+                    <div class="humbuger_wrap">
+                        <button class="btn_humburger" id="humguberBtn">
+                            <!-- <span>Menu</span> -->
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
 
         <section class="membership-hero">
             <div class="container">
@@ -47,17 +61,13 @@
                 </div>
             </div>
         </section>
-        
+
 
         <section class="compliance__wrapper">
-            <h2 class="title40">Compliance Disclaimer (ODS / ODC)</h2>
-            <p>Notarial services are provided in accordance with Ontario Official Document Certification (ODC)
-                standards.
-                Processing times, acceptance, and final determinations are made exclusively by ODS, embassies,
-                consulates, or
-                foreign authorities.</p>
-            <p>Apostilles are issued solely by Ontario Official Document Services (ODS). Our role is limited to document
-                review, notarization (where applicable), preparation, and submission.</p>
+            <h2 class="title40">Join the Network</h2>
+            <p>If you are a licensed Ontario notary public and wish to expand your services to include apostille
+                access for your clients, we welcome your participation. Contact us to request membership details and
+                onboarding information.</p>
         </section>
 
         @@include('components/footer.html')

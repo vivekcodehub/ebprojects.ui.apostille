@@ -182,3 +182,85 @@
 .benefit-card {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
+
+
+/* Section 3 */
+
+.member-requirements {
+    background-color: #ffffff; /* White background as per your screenshot */
+    padding: 100px 0;
+
+    .requirements-wrapper {
+        display: flex;
+        gap: 80px; /* Space between header and list */
+        align-items: flex-start;
+    }
+
+    .requirements-header {
+        flex: 1; /* Left side takes roughly half */
+        
+        .section-title {
+            font-family: 'Averia Serif Libre', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .sub-lead {
+            font-size: 1.5rem;
+            color: #333;
+        }
+    }
+
+    .requirements-body {
+        flex: 1.2; /* Right side slightly wider for readability */
+
+        .custom-number-list {
+            list-style: none;
+            counter-reset: req-counter;
+            padding-left: 0;
+
+            li {
+                counter-increment: req-counter;
+                display: flex;
+                font-size: 1.15rem;
+                line-height: 1.6;
+                margin-bottom: 20px;
+                color: #222;
+
+                &::before {
+                    content: counter(req-counter) ". ";
+                    font-weight: 600;
+                    margin-right: 12px;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        .disclaimer {
+            margin-top: 40px;
+            font-size: 1.1rem;
+            color: #444;
+            line-height: 1.5;
+        }
+    }
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 991px) {
+    .member-requirements {
+        padding: 60px 0;
+
+        .requirements-wrapper {
+            flex-direction: column; /* Stack vertically on tablets and mobile */
+            gap: 40px;
+        }
+
+        .requirements-header .section-title {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+/* Section 4 */

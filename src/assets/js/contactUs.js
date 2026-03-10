@@ -5,6 +5,7 @@ const messageInput    = document.getElementById("message");
 const attachmentInput = document.getElementById("attachment");
 const emailError      = emailInput.parentElement.querySelector(".errorMessage");
 const attachmentError = document.getElementById("attachmentError");
+const thankyouMsg = document.getElementById("thankyou");
 
 const emailPattern    = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const allowedTypes    = ["image/jpeg", "image/png", "image/gif", "application/pdf"];
@@ -93,7 +94,11 @@ async function submitContactForm(e) {
     document.getElementById("contactForm").reset();
     grecaptcha.reset();
     document.getElementById("Button--ContactUs").disabled = true;
+    thankyouMsg.style.display = "block";
 
+		setTimeout(() => {
+			thankyouMsg.style.display = "none";
+		}, 3000);
   } catch (error) {
     console.error("Error submitting contact form:", error);
   }

@@ -950,14 +950,22 @@
             margin-top: 40px;
         }
     }
+    .thankyouText {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 130%;
+        color: #fff;
+        display: none;
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #9C3E2C;
+        padding: 12px 24px;
+        border-radius: 8px;
+        box-shadow: 0px 9px 9px 0px rgba(0, 0, 0, 0.02);
+    }
 }
-
-
-
-
-
-
-
 
 
 

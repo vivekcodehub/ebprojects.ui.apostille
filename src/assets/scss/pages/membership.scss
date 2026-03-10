@@ -74,19 +74,6 @@
             flex-direction: column;
         }
 
-        .btn_humburger {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            // width: 100%;
-        }
-
-        @media screen and (max-width:991px) {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            // width: 100%;
-        }
 
         .brand {
             display: flex;
@@ -124,43 +111,5 @@
         }
     }
 
-    .btn_humburger {
-        display: flex;
-        gap: 4px;
-        display: none;
-        position: relative;
-        height: fit-content;
-        margin: auto 0;
 
-        
-
-        @media screen and (max-width:991px) {
-            display: block;
-
-            &::after {
-            content: "";
-            background: url(../../../assets/img/humbuger.svg) no-repeat center center;
-            width: 16px;
-            height: 16px;
-            position: absolute;
-            left: -18px;
-            top: 0;
-            bottom: 0;
-            margin: auto 0;
-        }
-
-        &.close {
-            &::after {
-                background: url(../../../assets/img/close.svg) no-repeat center center;
-            }
-        }
-
-        }
-
-        .img {
-            width: 28px;
-            height: 28px;
-        }
-        
-    }
 }

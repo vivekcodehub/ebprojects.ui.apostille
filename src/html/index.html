@@ -522,6 +522,13 @@
           <textarea name="message" rows="4" id="message" class="form-control"></textarea>
         </div>
 
+        <div class="inputGroup">
+          <label for="attachment">Attach a document (optional)</label>
+          <input type="file" id="attachment" name="attachment" class="form-control"
+            accept=".jpg,.jpeg,.png,.gif,.pdf">
+          <small id="attachmentError" class="errorMessage"></small>
+        </div>
+
         <div class="g-recaptcha" data-sitekey="6LdMDSIsAAAAAMEpT1fPuU9ZZ0U9FrHhLKsS1sfV" data-callback="captchaVerified"
           style="margin-bottom: 32px;"></div>
 
@@ -585,36 +592,7 @@
       });
     });
   </script>
-
-  <script>
-    document.getElementById("contactForm").addEventListener("submit", function (e) {
-
-      const emailInput = document.getElementById("email");
-      const errorMessage = emailInput.parentElement.querySelector(".errorMessage");
-
-      const emailValue = emailInput.value.trim();
-
-      // Email regex pattern
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-      if (emailValue === "") {
-        e.preventDefault();
-        errorMessage.textContent = "Email is required.";
-        emailInput.style.borderColor = "red";
-      }
-      else if (!emailPattern.test(emailValue)) {
-        e.preventDefault();
-        errorMessage.textContent = "Please enter a valid email address.";
-        emailInput.style.borderColor = "red";
-      }
-      else {
-        errorMessage.textContent = "";
-        emailInput.style.borderColor = "";
-      }
-
-    });
-  </script>
-
+  <script src="/assets/js/contactUs.js"></script>
   <script>
     var swiperChooseUs = new Swiper(".chooseUsSwiper", {
       slidesPerView: 1.3,

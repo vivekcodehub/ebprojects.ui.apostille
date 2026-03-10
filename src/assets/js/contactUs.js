@@ -92,7 +92,7 @@ async function submitContactForm(e) {
     // Show success / reset form
     document.getElementById("contactForm").reset();
     grecaptcha.reset();
-    document.querySelector(".co_Button").disabled = true;
+    document.getElementById("Button--ContactUs").disabled = true;
 
   } catch (error) {
     console.error("Error submitting contact form:", error);
@@ -101,11 +101,8 @@ async function submitContactForm(e) {
 
 document.getElementById("contactForm").addEventListener("submit", submitContactForm);
 
-function captchaVerified() {
-  document.querySelector(".co_Button").disabled = false;
-}
+document.getElementById("Button--ContactUs").disabled = true;
 
-// Disable submit until captcha solved
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector(".co_Button").disabled = true;
-});
+function captchaVerified() {
+    document.getElementById("Button--ContactUs").disabled = false;
+}

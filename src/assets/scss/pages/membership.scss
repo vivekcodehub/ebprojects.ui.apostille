@@ -264,3 +264,124 @@
 }
 
 /* Section 4 */
+
+.document-flow {
+    background-color: #ffffff; /* Matches white background in reference */
+    padding: 100px 0;
+
+    .flow-wrapper {
+        display: flex;
+        gap: 80px;
+        align-items: flex-start;
+    }
+
+    .flow-header {
+        flex: 1;
+        
+        .section-title {
+            font-family: 'Averia Serif Libre', serif; /* Branding font */
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 0;
+            line-height: 1.1;
+        }
+    }
+
+    .flow-body {
+        flex: 1.2;
+
+        .custom-number-list {
+            list-style: none;
+            counter-reset: flow-counter;
+            padding-left: 0;
+
+            li {
+                counter-increment: flow-counter;
+                display: flex;
+                font-size: 1.2rem;
+                line-height: 1.6;
+                margin-bottom: 25px;
+                color: #000;
+
+                &::before {
+                    content: counter(flow-counter) ". ";
+                    font-weight: 400; /* Regular weight for numbers as per reference */
+                    margin-right: 15px;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 991px) {
+    .document-flow {
+        padding: 60px 0;
+
+        .flow-wrapper {
+            flex-direction: column; /* Stack vertically on mobile/tablet */
+            gap: 30px;
+        }
+
+        .flow-header .section-title {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+/* Section 5 */
+
+.termination-section {
+  padding: 100px 20px;
+  background: #f3efed;
+}
+
+.termination-title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.termination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.termination-card {
+  background: #f7f3f2;
+  border: 1px solid #e3d8d5;
+  padding: 35px;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .termination-title {
+    font-size: 30px;
+  }
+
+  .termination-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .termination-card {
+    padding: 25px;
+    font-size: 16px;
+  }
+}
+
+.termination-card {
+  transition: all 0.3s ease;
+}
+
+.termination-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}

@@ -120,8 +120,8 @@
 
 /* Section 2 */
 
-.membership-benefits {       
-    background:#994137;
+.membership-benefits {
+    background: #994137;
     padding: 80px 20px;
 }
 
@@ -152,22 +152,32 @@
 }
 
 .benefit-card p {
-    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    font-weight: medium;
     line-height: 1.6;
 }
 
 .benefit-card ul {
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    font-weight: medium;
     margin: 15px 0;
     padding-left: 20px;
 }
 
 .benefit-card li {
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    font-weight: medium;
     margin-bottom: 8px;
 }
 
 .benefit-footer {
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    font-weight: medium;
     margin-top: 15px;
-    font-weight: 500;
 }
 
 /* Mobile Responsiveness */
@@ -218,7 +228,9 @@
         }
 
         .sub-lead {
-            font-size: 1.5rem;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            font-weight: medium;
             color: #333;
         }
     }
@@ -235,7 +247,9 @@
             li {
                 counter-increment: req-counter;
                 display: flex;
-                font-size: 1.15rem;
+                font-family: "Manrope", sans-serif;
+                font-size: 1rem;
+                font-weight: medium;
                 line-height: 1.6;
                 margin-bottom: 20px;
                 color: #222;
@@ -251,7 +265,9 @@
 
         .disclaimer {
             margin-top: 40px;
-            font-size: 1.1rem;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+            font-weight: medium;
             color: #444;
             line-height: 1.5;
         }
@@ -313,7 +329,9 @@
             li {
                 counter-increment: flow-counter;
                 display: flex;
-                font-size: 1.2rem;
+                font-family: "Manrope", sans-serif;
+                font-size: 1rem;
+                font-weight: medium;
                 line-height: 1.6;
                 margin-bottom: 25px;
                 color: #000;
@@ -375,7 +393,9 @@
     border: 1px solid #e3d8d5;
     padding: 35px;
     border-radius: 8px;
-    font-size: 18px;
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    font-weight: medium;
     line-height: 1.6;
 }
 

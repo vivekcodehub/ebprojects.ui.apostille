@@ -19,7 +19,7 @@
     h1 {
         font-family: "Averia Serif Libre", serif;
         /* Matching the serif font in screenshot */
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 700;
         margin-bottom: 2.5rem;
         line-height: 1.1;
@@ -128,7 +128,8 @@
 .benefits-title {
     text-align: center;
     color: #fff;
-    font-size: 40px;
+    font-family: "Averia Serif Libre", serif;
+    font-size: 3rem;
     margin-bottom: 60px;
     font-weight: 600;
 }
@@ -208,7 +209,7 @@
 
         .section-title {
             font-family: 'Averia Serif Libre', serif;
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 700;
             color: #000;
             margin-bottom: 20px;
@@ -291,7 +292,7 @@
         .section-title {
             font-family: 'Averia Serif Libre', serif;
             /* Branding font */
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 700;
             color: #000;
             margin-bottom: 0;
@@ -352,8 +353,9 @@
 }
 
 .termination-title {
+    font-family: "Averia Serif Libre", serif;
+    font-size: 3rem;
     text-align: center;
-    font-size: 38px;
     font-weight: 600;
     margin-bottom: 60px;
 }

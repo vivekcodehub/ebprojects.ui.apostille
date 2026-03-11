@@ -1,6 +1,8 @@
 .membership-hero {
-    /* Gradient matches the dark reddish-brown tones in the UI screenshot */
-    background: radial-gradient(circle at center, #9c4c44 0%, #7c2c24 100%);
+    background:
+        radial-gradient(1200px 400px at top center, #b4635a 0%, transparent 90%),
+        #994137;
+
     min-height: 80vh;
     display: flex;
     align-items: center;
@@ -8,43 +10,45 @@
     padding: 100px 0;
     text-align: center;
     color: #ffffff;
+}
 
-    .hero-content {
-        max-width: 900px;
-        margin: 0 auto;
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
 
-        h1 {
-            font-family: 'Averia Serif Libre', serif; /* Matching the serif font in screenshot */
-            font-size: 4rem;
-            font-weight: 700;
-            margin-bottom: 2.5rem;
-            line-height: 1.1;
-        }
+    h1 {
+        font-family: "Averia Serif Libre", serif;
+        /* Matching the serif font in screenshot */
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 2.5rem;
+        line-height: 1.1;
+    }
 
-        .hero-text {
-            font-family: 'Manrope', sans-serif;
-            font-size: 1.15rem;
-            line-height: 1.7;
-            margin-bottom: 2rem;
-            opacity: 0.95;
-            font-weight: 400;
-            
-            &:last-child {
-                margin-bottom: 0;
-            }
+    .hero-text {
+        font-family: "Manrope", sans-serif;
+        font-size: 1.15rem;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+        opacity: 0.95;
+        font-weight: 400;
+
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }
+
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .membership-hero {
         padding: 60px 20px;
-        
+
         h1 {
             font-size: 2.5rem;
         }
-        
+
         .hero-text {
             font-size: 1rem;
         }
@@ -116,89 +120,92 @@
 
 /* Section 2 */
 
-.membership-benefits {
-  background: #9d3f31;
-  padding: 80px 20px;
+.membership-benefits {       
+    background:#994137;
+    padding: 80px 20px;
 }
 
 .benefits-title {
-  text-align: center;
-  color: #fff;
-  font-size: 40px;
-  margin-bottom: 60px;
-  font-weight: 600;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 60px;
+    font-weight: 600;
 }
 
 .benefit-card {
-  background: #f4f4f4;
-  padding: 40px;
-  border-radius: 8px;
-  margin-bottom: 40px;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+    background: #f4f4f4;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .benefit-card h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
 .benefit-card p {
-  font-size: 16px;
-  line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .benefit-card ul {
-  margin: 15px 0;
-  padding-left: 20px;
+    margin: 15px 0;
+    padding-left: 20px;
 }
 
 .benefit-card li {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .benefit-footer {
-  margin-top: 15px;
-  font-weight: 500;
+    margin-top: 15px;
+    font-weight: 500;
 }
 
 /* Mobile Responsiveness */
 
 @media (max-width: 768px) {
-  .benefits-title {
-    font-size: 30px;
-  }
+    .benefits-title {
+        font-size: 30px;
+    }
 
-  .benefit-card {
-    padding: 25px;
-  }
+    .benefit-card {
+        padding: 25px;
+    }
 
-  .benefit-card h3 {
-    font-size: 20px;
-  }
+    .benefit-card h3 {
+        font-size: 20px;
+    }
 }
 
 .benefit-card {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 
 /* Section 3 */
 
 .member-requirements {
-    background-color: #ffffff; /* White background as per your screenshot */
+    background-color: #ffffff;
+    /* White background as per your screenshot */
     padding: 100px 0;
 
     .requirements-wrapper {
         display: flex;
-        gap: 80px; /* Space between header and list */
+        gap: 80px;
+        /* Space between header and list */
         align-items: flex-start;
     }
 
     .requirements-header {
-        flex: 1; /* Left side takes roughly half */
-        
+        flex: 1;
+        /* Left side takes roughly half */
+
         .section-title {
             font-family: 'Averia Serif Libre', serif;
             font-size: 3.5rem;
@@ -214,7 +221,8 @@
     }
 
     .requirements-body {
-        flex: 1.2; /* Right side slightly wider for readability */
+        flex: 1.2;
+        /* Right side slightly wider for readability */
 
         .custom-number-list {
             list-style: none;
@@ -253,7 +261,8 @@
         padding: 60px 0;
 
         .requirements-wrapper {
-            flex-direction: column; /* Stack vertically on tablets and mobile */
+            flex-direction: column;
+            /* Stack vertically on tablets and mobile */
             gap: 40px;
         }
 
@@ -266,7 +275,8 @@
 /* Section 4 */
 
 .document-flow {
-    background-color: #ffffff; /* Matches white background in reference */
+    background-color: #ffffff;
+    /* Matches white background in reference */
     padding: 100px 0;
 
     .flow-wrapper {
@@ -277,9 +287,10 @@
 
     .flow-header {
         flex: 1;
-        
+
         .section-title {
-            font-family: 'Averia Serif Libre', serif; /* Branding font */
+            font-family: 'Averia Serif Libre', serif;
+            /* Branding font */
             font-size: 3.5rem;
             font-weight: 700;
             color: #000;
@@ -306,7 +317,8 @@
 
                 &::before {
                     content: counter(flow-counter) ". ";
-                    font-weight: 400; /* Regular weight for numbers as per reference */
+                    font-weight: 400;
+                    /* Regular weight for numbers as per reference */
                     margin-right: 15px;
                     white-space: nowrap;
                 }
@@ -321,7 +333,8 @@
         padding: 60px 0;
 
         .flow-wrapper {
-            flex-direction: column; /* Stack vertically on mobile/tablet */
+            flex-direction: column;
+            /* Stack vertically on mobile/tablet */
             gap: 30px;
         }
 
@@ -334,54 +347,54 @@
 /* Section 5 */
 
 .termination-section {
-  padding: 100px 20px;
-  background: #f3efed;
+    padding: 100px 20px;
+    background: #f3efed;
 }
 
 .termination-title {
-  text-align: center;
-  font-size: 38px;
-  font-weight: 600;
-  margin-bottom: 60px;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 60px;
 }
 
 .termination-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  max-width: 1100px;
-  margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .termination-card {
-  background: #f7f3f2;
-  border: 1px solid #e3d8d5;
-  padding: 35px;
-  border-radius: 8px;
-  font-size: 18px;
-  line-height: 1.6;
+    background: #f7f3f2;
+    border: 1px solid #e3d8d5;
+    padding: 35px;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 @media (max-width: 768px) {
-  .termination-title {
-    font-size: 30px;
-  }
+    .termination-title {
+        font-size: 30px;
+    }
 
-  .termination-grid {
-    grid-template-columns: 1fr;
-  }
+    .termination-grid {
+        grid-template-columns: 1fr;
+    }
 
-  .termination-card {
-    padding: 25px;
-    font-size: 16px;
-  }
+    .termination-card {
+        padding: 25px;
+        font-size: 16px;
+    }
 }
 
 .termination-card {
-  transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .termination-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }

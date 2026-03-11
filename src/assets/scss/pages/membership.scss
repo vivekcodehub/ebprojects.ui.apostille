@@ -256,7 +256,7 @@
 
                 &::before {
                     content: counter(req-counter) ". ";
-                    font-weight: 600;
+                    // font-weight: 600;
                     margin-right: 12px;
                     white-space: nowrap;
                 }

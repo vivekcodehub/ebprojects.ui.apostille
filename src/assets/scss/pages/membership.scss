@@ -12,6 +12,21 @@
     color: #ffffff;
 }
 
+.hero-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hero-logo {
+        max-width: 350px;
+        /* Adjust based on your original logo file size */
+        height: auto;
+        /* Filter can be used if you need to make the logo pop against the dark red */
+        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.1));
+    }
+}
+
+
 .hero-content {
     max-width: 900px;
     margin: 0 auto;

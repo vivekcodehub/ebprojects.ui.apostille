@@ -1,0 +1,64 @@
+.terms-conditions {
+  background-color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .section-title {
+    font-family: "Averia Serif Libre", serif; // Signature branding font
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #000;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+    color: #333;
+  }
+
+  .terms-section {
+    margin-bottom: 40px;
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .terms-list {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 15px;
+
+      li {
+        position: relative;
+        padding-left: 0;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        color: #444;
+        margin-bottom: 5px;
+
+        // Adds the subtle indent or bullet if preferred,
+        // though your screenshot shows a clean left alignment.
+      }
+    }
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .terms-conditions {
+    padding-top: 60px;
+
+    .section-title {
+      font-size: 2.5rem;
+    }
+  }
+}

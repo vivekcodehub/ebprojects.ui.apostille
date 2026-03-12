@@ -1,3 +1,13 @@
+
+.section-title mb-4{
+ font-family: "Averia Serif Libre", serif;
+ font-size: 2.5rem;
+ padding-top: 100px;
+ padding-bottom: 100px;
+
+}
+
+
 .terms-conditions {
   background-color: #ffffff;
   padding-top: 100px;
@@ -45,9 +55,7 @@
         line-height: 1.6;
         color: #444;
         margin-bottom: 5px;
-
-        // Adds the subtle indent or bullet if preferred,
-        // though your screenshot shows a clean left alignment.
+        
       }
     }
   }

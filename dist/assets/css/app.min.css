@@ -185,7 +185,7 @@ button {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
+    flex-direction: initial;
   }
 }
 .header__wrapper .nav_header .btn_humburger {

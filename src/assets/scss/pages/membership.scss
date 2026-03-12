@@ -56,67 +56,67 @@
 }
 
 
-.header__wrapper {
-    padding: 12px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1024;
-    transition: all 0.3s ease-in-out;
+// .header__wrapper {
+//     padding: 12px 0;
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     z-index: 1024;
+//     transition: all 0.3s ease-in-out;
 
-    @media screen and (max-width:991px) {
-        background: #fff;
-        padding: 12px 16px;
-    }
+//     @media screen and (max-width:991px) {
+//         background: #fff;
+//         padding: 12px 16px;
+//     }
 
-    .nav_header {
-        display: flex;
-        // justify-content: center;
-        align-items: center;
+//     .nav_header {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
 
-        @media screen and (max-width:991px) {
-            flex-direction: column;
-        }
-
-
-        .brand {
-            display: flex;
-            align-items: center;
-            flex-shrink: 0;
-        }
-
-        .brand img {
-            width: 250px;
-            height: auto;
-        }
-
-        @media screen and (max-width: 991px) {
-            .brand img {
-                width: 200px;
-            }
-        }
-
-        img {
-            width: 20%;
-            height: 100%;
-        }
-
-        span {
-            font-size: 32px;
-            font-weight: 700;
-            font-family: "Averia Serif Libre", serif;
-            line-height: 120%;
-            letter-spacing: -2px;
-            color: #994137;
-
-            @media screen and (max-width:767px) {
-                font-size: 24px;
-            }
-        }
-    }
+//         @media screen and (max-width:991px) {
+//             flex-direction: column;
+//         }
 
 
-}
+//         .brand {
+//             display: flex;
+//             align-items: center;
+//             flex-shrink: 0;
+//         }
+
+//         .brand img {
+//             width: 250px;
+//             height: auto;
+//         }
+
+//         @media screen and (max-width: 991px) {
+//             .brand img {
+//                 width: 200px;
+//             }
+//         }
+
+//         img {
+//             width: 20%;
+//             height: 100%;
+//         }
+
+//         span {
+//             font-size: 32px;
+//             font-weight: 700;
+//             font-family: "Averia Serif Libre", serif;
+//             line-height: 120%;
+//             letter-spacing: -2px;
+//             color: #994137;
+
+//             @media screen and (max-width:767px) {
+//                 font-size: 24px;
+//             }
+//         }
+//     }
+
+
+// }
 
 /* Section 2 */
 

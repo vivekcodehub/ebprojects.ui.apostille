@@ -58,7 +58,7 @@
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .membership-hero {
-        padding: 60px 20px;
+        padding: 24px 20px;
 
         h1 {
             font-size: 2.5rem;
@@ -199,7 +199,7 @@
 
 @media (max-width: 768px) {
     .benefits-title {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .benefit-card {
@@ -297,11 +297,11 @@
         .requirements-wrapper {
             flex-direction: column;
             /* Stack vertically on tablets and mobile */
-            gap: 40px;
+            // gap: 0px;
         }
 
         .requirements-header .section-title {
-            font-size: 2.5rem;
+            font-size: 32px;
         }
     }
 }
@@ -375,7 +375,7 @@
         }
 
         .flow-header .section-title {
-            font-size: 2.5rem;
+            font-size: 32px;
         }
     }
 }
@@ -417,8 +417,14 @@
 }
 
 @media (max-width: 768px) {
+
+    .termination-section{
+    margin-left: 0;
+    margin-right: 0;
+    }
+
     .termination-title {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .termination-grid {

@@ -36,7 +36,7 @@
 
         <section class="membership-hero">
             <div class="container">
-                
+
                 <div class="hero-logo-wrapper mb-4">
                     <img src="assets/img/White Logo.png" alt="ApostilleCertificates.ca Logo" class="hero-logo">
                 </div>
@@ -240,6 +240,43 @@
             <p>If you are a licensed Ontario notary public and wish to expand your services to include apostille
                 access for your clients, we welcome your participation. Contact us to request membership details and
                 onboarding information.</p>
+        </section>
+
+        <section class="quote__form__wrapper" id="quote">
+            <div class="title_flex">
+                <h2 class="title40">Get a quote or ask a question</h2>
+                <p class="subTitle14"><span>Use this contact</span> form or email us at
+                    <span>info@ApostilleCertificates.ca</span>
+                </p>
+            </div>
+
+            <form action="" id="contactForm">
+                <div class="inputGroup">
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" name="email" class="form-control">
+                    <small class="errorMessage"></small>
+                </div>
+
+                <div class="inputGroup">
+                    <label for="message">Your message</label>
+                    <textarea name="message" rows="4" id="message" class="form-control"></textarea>
+                </div>
+
+                <div class="inputGroup">
+                    <label for="attachment">Attach a document (optional)</label>
+                    <input type="file" id="attachment" name="attachment" class="form-control"
+                        accept=".jpg,.jpeg,.png,.gif,.pdf">
+                    <small id="attachmentError" class="errorMessage"></small>
+                </div>
+
+                <div class="g-recaptcha" data-sitekey="6LdMDSIsAAAAAMEpT1fPuU9ZZ0U9FrHhLKsS1sfV"
+                    data-callback="captchaVerified" style="margin-bottom: 32px; justify-items: anchor-center;"></div>
+
+                <button type="submit" id="Button--ContactUs" class="co_Button">Submit</button>
+            </form>
+            <div id="thankyou" class="thankyouText">
+                Thank you! Your message has been submitted.
+            </div>
         </section>
 
         @@include('components/footer.html')

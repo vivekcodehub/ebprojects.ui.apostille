@@ -129,6 +129,8 @@ async function submitContactForm(e) {
 
     document.getElementById("contactForm").reset();
     grecaptcha.reset();
+    submitBtn.textContent = "Submit";
+    submitBtn.disabled = true;
     thankyouMsg.style.display = "block";
 
     setTimeout(() => {

@@ -97,6 +97,7 @@ async function submitContactForm(e) {
   if (captchaResponse.length === 0) return;
 
   const file = attachmentInput.files[0] || null;
+  const submitBtn = document.getElementById("Button--ContactUs");
 
   const formData = new FormData();
 
@@ -115,6 +116,10 @@ async function submitContactForm(e) {
     formData.append("attachment", file);
   }
 
+  // Show sending state
+  submitBtn.textContent = "Sending...";
+  submitBtn.disabled = true;
+
   try {
     const response = await fetch(API_URL, {
       method: "POST",
@@ -124,7 +129,6 @@ async function submitContactForm(e) {
 
     document.getElementById("contactForm").reset();
     grecaptcha.reset();
-    document.getElementById("Button--ContactUs").disabled = true;
     thankyouMsg.style.display = "block";
 
     setTimeout(() => {
@@ -132,6 +136,9 @@ async function submitContactForm(e) {
     }, 3000);
   } catch (error) {
     console.error("Error submitting contact form:", error);
+    // Restore button so the user can try again
+    submitBtn.textContent = "Submit";
+    submitBtn.disabled = false;
   }
 }
 

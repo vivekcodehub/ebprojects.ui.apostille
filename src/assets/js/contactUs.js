@@ -1,17 +1,37 @@
 const API_URL = "https://jutxnn1a0a.execute-api.us-east-1.amazonaws.com/v1/pigeonpost/contactus";
 
+const firstNameInput  = document.getElementById("firstName");
+const lastNameInput   = document.getElementById("lastName");
+const cityInput       = document.getElementById("city");
 const emailInput      = document.getElementById("email");
 const messageInput    = document.getElementById("message");
 const attachmentInput = document.getElementById("attachment");
+
+const firstNameError  = firstNameInput.parentElement.querySelector(".errorMessage");
+const lastNameError   = lastNameInput.parentElement.querySelector(".errorMessage");
+const cityError       = cityInput.parentElement.querySelector(".errorMessage");
 const emailError      = emailInput.parentElement.querySelector(".errorMessage");
 const attachmentError = document.getElementById("attachmentError");
-const thankyouMsg = document.getElementById("thankyou");
+const thankyouMsg     = document.getElementById("thankyou");
 
-const emailPattern    = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const allowedTypes    = ["image/jpeg", "image/png", "image/gif", "application/pdf"];
-const maxFileSize     = 10 * 1024 * 1024; // 10MB — must match backend multer limit
+const emailPattern  = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const allowedTypes  = ["image/jpeg", "image/png", "image/gif", "application/pdf"];
+const maxFileSize   = 10 * 1024 * 1024; // 10MB
 
-// Live validation
+// Live validation helpers
+function clearError(input, errorEl) {
+  input.addEventListener("input", () => {
+    if (input.value.trim() !== "") {
+      errorEl.textContent = "";
+      input.style.borderColor = "";
+    }
+  });
+}
+
+clearError(firstNameInput, firstNameError);
+clearError(lastNameInput,  lastNameError);
+clearError(cityInput,      cityError);
+
 emailInput.addEventListener("input", () => {
   if (emailPattern.test(emailInput.value.trim())) {
     emailError.textContent = "";
@@ -33,10 +53,25 @@ attachmentInput.addEventListener("change", () => {
   }
 });
 
+function validateField(input, errorEl, label) {
+  if (input.value.trim() === "") {
+    errorEl.textContent = `${label} is required.`;
+    input.style.borderColor = "red";
+    return false;
+  }
+  errorEl.textContent = "";
+  input.style.borderColor = "";
+  return true;
+}
+
 function validateForm() {
   let valid = true;
-  const emailValue = emailInput.value.trim();
 
+  valid = validateField(firstNameInput, firstNameError, "First name") && valid;
+  valid = validateField(lastNameInput,  lastNameError,  "Last name")  && valid;
+  valid = validateField(cityInput,      cityError,      "City")       && valid;
+
+  const emailValue = emailInput.value.trim();
   if (emailValue === "") {
     emailError.textContent = "Email is required.";
     emailInput.style.borderColor = "red";
@@ -63,42 +98,38 @@ async function submitContactForm(e) {
 
   const file = attachmentInput.files[0] || null;
 
-  // Build multipart/form-data — required when sending a file
-  // When no file, we still use FormData so the backend stays consistent
   const formData = new FormData();
 
   const body = {
     client: {
       email:      emailInput.value.trim(),
-      FIRST_NAME: "",
-      LAST_NAME:  "",
-      QUERY:      messageInput.value.trim(),
+      FIRST_NAME: firstNameInput.value.trim(),
+      LAST_NAME:  lastNameInput.value.trim(),
+      QUERY:      `${messageInput.value.trim()} [City: ${cityInput.value.trim()}]`,
     },
     source: "ac",
   };
 
-  formData.append("data", JSON.stringify(body)); // JSON payload as named field
+  formData.append("data", JSON.stringify(body));
   if (file) {
-    formData.append("attachment", file);          // file field — matches multer's upload.single("attachment")
+    formData.append("attachment", file);
   }
 
   try {
     const response = await fetch(API_URL, {
       method: "POST",
-      // Do NOT set Content-Type manually — browser sets it automatically with the correct multipart boundary
       body: formData,
     });
     console.log("Response from server:", response);
 
-    // Show success / reset form
     document.getElementById("contactForm").reset();
     grecaptcha.reset();
     document.getElementById("Button--ContactUs").disabled = true;
     thankyouMsg.style.display = "block";
 
-		setTimeout(() => {
-			thankyouMsg.style.display = "none";
-		}, 3000);
+    setTimeout(() => {
+      thankyouMsg.style.display = "none";
+    }, 3000);
   } catch (error) {
     console.error("Error submitting contact form:", error);
   }
@@ -109,5 +140,5 @@ document.getElementById("contactForm").addEventListener("submit", submitContactF
 document.getElementById("Button--ContactUs").disabled = true;
 
 function captchaVerified() {
-    document.getElementById("Button--ContactUs").disabled = false;
+  document.getElementById("Button--ContactUs").disabled = false;
 }
